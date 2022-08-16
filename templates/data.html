@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        body,
+        table {
+            font-family: 'Poppins';
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .header h2 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+        .header h4 {
+            font-size: 24px;
+        }
+        
+        .header p {
+            font-size: 16px;
+        }
+        
+        table {
+            text-align: center;
+            width: 100px;
+        }
+        
+        table thead tr {
+            text-align: center !important;
+        }
+        
+        input[type=submit] {
+            background-color: rgb(36, 142, 228);
+            color: white;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 15px;
+            border: none;
+            box-shadow: 0 2px 0px 1px rgba(27, 27, 27, 0.466);
+            border-radius: 8px
+        }
+        
+        input[type=submit]:hover {
+            background-color: rgb(28, 98, 156);
+        }
+    </style>
+
+
+    <title>Tubes Fungsional</title>
+</head>
+
+
+<body>
+    <section class="header">
+        <h2>PERKALIAN ELEMEN BARIS PADA FILE</h2>
+    </section>
+    <div class="masukan-user">
+        <ul style="list-style: none;">
+            <li>
+                {{ data|safe }}
+            </li>
+            <li>
+                <form action="{{ url_for('hasil')}}" method="post" enctype="multipart/form-data">
+                    <p>ingin dikalikan elemen baris ke berapa ? (index mulai dari 0)</p>
+                    <input type="number" name="baris" autocomplete="off"><br>
+                    <input type="submit" name="" value="Submit">
+                </form>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

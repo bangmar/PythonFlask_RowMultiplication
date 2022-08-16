@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Poppins';
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        table {
+            margin: 50px auto;
+            text-align: center;
+            width: 100px;
+        }
+        
+        .masukan-user {
+            margin-top: 120px;
+        }
+        
+        table thead tr {
+            text-align: center !important;
+        }
+        
+        input[type=submit] {
+            background-color: rgb(36, 142, 228);
+            color: white;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 15px;
+            border: none;
+            box-shadow: 0 2px 0px 1px rgba(27, 27, 27, 0.466);
+            border-radius: 8px
+        }
+        
+        input[type=submit]:hover {
+            background-color: rgb(28, 98, 156);
+        }
+    </style>
+    <title>Tubes Fungsional</title>
+</head>
+
+<body>
+    <div class="masukan-user">
+        <ul style="list-style: none;">
+            <li>
+                {{ hasil1|safe }}
+            </li>
+            <li>
+                <p>anda memasukan baris ke {{hasil2}}</p>
+                <p>Jadi hasil perkalian baris ke {{hasil2}} adalah <span style="font-weight: bold">{{hasil4}}</span></p>
+            </li>
+            <li>
+                <a href="#" onclick="history.go(-1)"><input type="submit" value="Hitung Lagi ?"></a>
+                <a href="#" onclick="history.go(-2)"><input type="submit" value="File Baru ?"></a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

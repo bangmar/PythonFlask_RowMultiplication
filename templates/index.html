@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+
+    <style>
+        .header,
+        .form {
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        body {
+            font-family: 'Poppins'
+        }
+        
+        .header h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 10px
+        }
+        
+        .header h4 {
+            font-size: 24px;
+            margin-bottom: 50px
+        }
+        
+        .header p {
+            font-size: 16px;
+        }
+        
+        .anggota ul {
+            margin-top: 20px;
+            padding-bottom: 10px;
+            display: flex;
+            gap: 1.5em;
+            justify-content: center;
+        }
+        
+        .anggota ul li img {
+            height: 90px;
+            width: 90px;
+            margin-bottom: 10px
+        }
+        
+        .form {
+            width: 400px;
+            text-align: center;
+        }
+        
+        .form .masukan .btn {
+            background-color: rgb(36, 142, 228);
+            color: white;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 15px;
+            border: none;
+            box-shadow: 0 2px 0px 1px rgba(27, 27, 27, 0.466);
+            border-radius: 8px
+        }
+        
+        .form .masukan .btn:hover {
+            background-color: rgb(28, 98, 156);
+        }
+        
+        .form .masukan .btn2 {
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: none;
+        }
+        
+        .form .masukan .btn2:hover {
+            background-color: rgb(36, 142, 228);
+        }
+        
+        input[type='file'] {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+        }
+    </style>
+
+
+
+    <title>Tubes Fungsional</title>
+</head>
+
+<body>
+    <section class="header">
+        <h2>Selamat datang Tugas Besar Pemprograman Fungsional</h2>
+        <h4>Kelompok BPJS</h4>
+        <div class="anggota">
+            <ul>
+                <li>
+                    <img src="../static/dika.PNG" alt="">
+                    <p>Dika Alim Mu'adin</p>
+                </li>
+                <li>
+                    <img src="../static/mario.PNG" alt="">
+                    <p>Mario Rudy Silalahi</p>
+                </li>
+                <li>
+                    <img src="../static/laureta.PNG" alt="">
+                    <p>Laureta Mauren M</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="form">
+        <form class="masukan" method="post" enctype="multipart/form-data">
+            <input type="file" name="berkas" value="" class="btn btn2"><br>
+            <input type="submit" name="" value="Submit" class="btn">
+        </form>
+    </section>
+
+</body>
+
+</html>
